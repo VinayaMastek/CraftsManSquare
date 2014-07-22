@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+<script type="text/javascript" data-app-id="GOwXRzHxjaeAM2TWcqxckA"
+	src="https://assets.yammer.com/assets/platform_js_sdk.js"></script>
+
+
+<script>
+	yam.connect
+			.loginButton(
+					'#yammer-login',
+					function(resp) {
+						if (resp.authResponse) {
+							document.getElementById('yammer-login').innerHTML = 'Welcome to Yammer!';
+							document.getElementById("yam-status").innerHTML='Syncing Yammer Users'
+							yam.platform.request({
+									url: "https://api.yammer.com/api/v1/users.json",     //this is one of many REST endpoints that are available
+							      method: "GET",
+							      data: {    //use the data object literal to specify parameters, as documented in the REST API section of this developer site
+							        },
+							      success: function (user) { //print message response information to the console
+							      		alert("The request was successful.");
+							          	console.dir(user);
+							        },
+							      error: function (user) {
+							          alert("There was an error with the request.");
+							        }
+							});
+						}
+					});
+	
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+	<div data-role="header" id="syncyammerdata" data-theme="a">
+		<h1>Sync Yammer Data</h1>
+		<span id="yammer-login" class="ui-btn-right"></span>
+	</div>
+	<div>
+		<span></span> <label id="yam-status"></label>
+	</div>
+</body>
+</html>
