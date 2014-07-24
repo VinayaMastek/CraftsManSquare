@@ -8,7 +8,7 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -20,5 +20,36 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/ChurnAnalysisRapid/rapidminerhome/lib/commons-httpclient-3.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="externaljars/commons-logging-1.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="externaljars/commons-codec-1.9.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="externaljars/fluent-hc-4.3.4.jar"/>
+	<classpathentry kind="lib" path="externaljars/httpclient-4.3.4.jar"/>
+	<classpathentry kind="lib" path="externaljars/httpclient-cache-4.3.4.jar"/>
+	<classpathentry kind="lib" path="externaljars/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="externaljars/httpmime-4.3.4.jar"/>
+	<classpathentry kind="lib" path="externaljars/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="externaljars/commons-httpclient-3.0.1.jar"/>
+	<classpathentry kind="lib" path="externaljars/httpunit.jar"/>
+	<classpathentry kind="lib" path="externaljars/js-1.6R5.jar"/>
+	<classpathentry kind="lib" path="externaljars/jtidy-4aug2000r7-dev.jar"/>
+	<classpathentry kind="lib" path="externaljars/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="externaljars/mail-1.4.jar"/>
+	<classpathentry kind="lib" path="externaljars/nekohtml-0.9.5.jar"/>
+	<classpathentry kind="lib" path="externaljars/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="externaljars/xercesImpl-2.6.1.jar"/>
+	<classpathentry kind="lib" path="externaljars/xmlParserAPIs-2.6.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

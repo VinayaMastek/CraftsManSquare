@@ -20,6 +20,11 @@
 						if (resp.authResponse) {
 							document.getElementById('yammer-login').innerHTML = 'Welcome to Yammer!';
 							document.getElementById("yam-status").innerHTML='Syncing Yammer Users'
+							console.dir(resp);
+							
+							
+							
+							
 							yam.platform.request({
 									url: "https://api.yammer.com/api/v1/users.json",     //this is one of many REST endpoints that are available
 							      method: "GET",
@@ -27,7 +32,21 @@
 							        },
 							      success: function (user) { //print message response information to the console
 							      		alert("The request was successful.");
-							          	console.dir(user);
+							      		document.write('<table border="1" cellspacing="1" cellpadding="5">')
+											document.write('<tr>')
+					      	    	   document.write('<td>' + 'Id' + '</td>')
+					      	    	   document.write('<td>' + 'Full Name'+ '</td>')
+					      	    	   document.write('<td>' + 'Job Title' + '</td>')
+					      	    	   document.write('</tr>')
+									      for(i in user){
+						      	    	   document.write('<tr>')
+						      	    	   document.write('<td>' + user[i].id + '</td>')
+						      	    	   document.write('<td>' + user[i].full_name + '</td>')
+						      	    	   document.write('<td>' + user[i].job_title + '</td>')
+						      	    	   document.write('</tr>')
+									      }
+						      	    	document.write('</table>')
+							      		console.dir(user);
 							        },
 							      error: function (user) {
 							          alert("There was an error with the request.");
@@ -49,6 +68,7 @@
 	</div>
 	<div>
 		<span></span> <label id="yam-status"></label>
+		
 	</div>
 </body>
 </html>

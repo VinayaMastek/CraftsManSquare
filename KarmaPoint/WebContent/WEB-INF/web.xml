@@ -3,5 +3,18 @@
   <display-name>KarmaPoint</display-name>
   <welcome-file-list>
     <welcome-file>sync.html</welcome-file>
+    <welcome-file>loginyammer.html</welcome-file>
   </welcome-file-list>
+
+  <servlet>
+    <description></description>
+    <display-name>yammerServlet</display-name>
+    <servlet-name>yammerServlet</servlet-name>
+    <servlet-class>com.mastek.servlet.yammerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>yammerServlet</servlet-name>
+    <url-pattern>/yammerServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
