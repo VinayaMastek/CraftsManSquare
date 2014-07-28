@@ -6,9 +6,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.mastek.domain.YamAuth;
-
 /**
  * Servlet implementation class yammerServlet
  */
@@ -35,8 +32,8 @@ public class yammerServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Inside Servlet");
-		YamAuth auth = new YamAuth();
-		auth.getAuthToken();
+		//YamAuth auth = new YamAuth();
+		//auth.getAuthToken();
 		//auth.getURL();
 	}
 

@@ -51,5 +51,10 @@
 	<classpathentry kind="lib" path="externaljars/servlet-api-2.4.jar"/>
 	<classpathentry kind="lib" path="externaljars/xercesImpl-2.6.1.jar"/>
 	<classpathentry kind="lib" path="externaljars/xmlParserAPIs-2.6.1.jar"/>
+	<classpathentry kind="lib" path="externaljars/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="externaljars/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="externaljars/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="externaljars/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="externaljars/commons-beanutils-1.9.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
