@@ -14,7 +14,7 @@ public class MyYammerClientTest {
 		String appId = "GOwXRzHxjaeAM2TWcqxckA";
 		String secretKey = "LcQH8Mdc5cqxBqHScw1xMVScYOeyBEbt3AqisCZowQk";
 		String userName = "vinaya.salgaonkar@mastek.com";
-		String pwd = "Online01";
+		String pwd = "xxx";
 		MyYammerClient client = new MyYammerClient(appId, secretKey,userName, pwd);
 		List<YamUser> users = client.getAllUsers();
 		for (YamUser user : users)

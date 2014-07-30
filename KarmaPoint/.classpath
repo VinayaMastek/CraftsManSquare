@@ -56,5 +56,6 @@
 	<classpathentry kind="lib" path="externaljars/ezmorph-1.0.6.jar"/>
 	<classpathentry kind="lib" path="externaljars/commons-collections-3.2.jar"/>
 	<classpathentry kind="lib" path="externaljars/commons-beanutils-1.9.0.jar"/>
+	<classpathentry kind="lib" path="externaljars/postgresql-9.3-1100.jdbc4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
