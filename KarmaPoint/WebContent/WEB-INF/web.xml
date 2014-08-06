@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>KarmaPoint</display-name>
+  <display-name>YammerSync</display-name>
   <welcome-file-list>
     <welcome-file>sync.html</welcome-file>
     <welcome-file>loginyammer.html</welcome-file>
   </welcome-file-list>
-
   <servlet>
     <description></description>
     <display-name>yammerServlet</display-name>
@@ -16,5 +15,4 @@
     <servlet-name>yammerServlet</servlet-name>
     <url-pattern>/yammerServlet</url-pattern>
   </servlet-mapping>
-  
 </web-app>
