@@ -1,16 +1,16 @@
 package com.mastek.domain;
 
 public class YamUser {
-	String userId;
-	String fullName;
-	String jobTitle;
-	String email;
-	String activatedAt;
+	private int userId;
+	private String fullName;
+	private String jobTitle;
+	private String email;
+	private String activatedAt;
 	
-	public String getUserId() {
+	public int getUserId() {
 		return userId;
 	}
-	public void setUserId(String userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 	public String getFullName() {
@@ -37,6 +37,14 @@ public class YamUser {
 	public void setActivatedAt(String activatedAt) {
 		this.activatedAt = activatedAt;
 	}
+	@Override
+	public String toString() {
+		return "YamUser [userId=" + userId + ", fullName=" + fullName
+				+ ", jobTitle=" + jobTitle + ", email=" + email
+				+ ", activatedAt=" + activatedAt + "]";
+	}
+
+	
 
 }
 
