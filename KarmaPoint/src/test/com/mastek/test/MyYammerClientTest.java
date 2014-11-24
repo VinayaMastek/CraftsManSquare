@@ -17,7 +17,7 @@ public class MyYammerClientTest {
 		String pwd = "xxxx";
 		
 		MyYammerClient client = new MyYammerClient(appId, secretKey,userName, pwd);
-		testMsgDownload(client);
+		//testMsgDownload(client);
 	}
 
 	

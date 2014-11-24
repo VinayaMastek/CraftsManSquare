@@ -124,9 +124,3 @@ FROM
 	threads t
 WHERE t.msgid not in (select threadid from responses r where r.threaduser = t.userid) and 
 msgsummary.userid = t.userid);
-
-
-
-
-
-
